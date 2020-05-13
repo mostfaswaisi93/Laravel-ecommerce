@@ -12,6 +12,8 @@
 @import 'components/buttons';
 @import 'components/section-description';
 @import 'components/sidebar';
+@import 'components/might-like';
+@import 'components/form';
 // Layout
 @import 'layout/header';
 @import 'layout/footer';
@@ -19,3 +21,5 @@
 @import 'pages/main-page';
 @import 'pages/products';
 @import 'pages/product';
+@import 'pages/cart';
+@import 'pages/checkout';
