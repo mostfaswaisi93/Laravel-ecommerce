@@ -77,8 +77,7 @@
 
                 <div class="spacer"></div>
 
-                <input type="submit" class="button-primary full-width" value="Complete Order">
-
+                <button type="submit" class="button-primary full-width">Complete Order</button>
 
             </form>
         </div>
@@ -154,14 +153,6 @@
                 </div>
             </div> <!-- end checkout-totals -->
 
-            <a href="#" class="have-code">Have a Code?</a>
-
-            <div class="have-code-container">
-                <form action="#">
-                    <input type="text">
-                    <input type="submit" class="button" value="Apply">
-                </form>
-            </div>
         </div>
 
     </div> <!-- end checkout-section -->

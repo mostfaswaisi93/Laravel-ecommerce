@@ -290,6 +290,11 @@ h2 {
   background: #35a48d;
 }
 
+.button-plain {
+  border: 1px solid #212121 !important;
+  background: transparent;
+}
+
 .button-container {
   margin: 80px 0;
 }
@@ -345,7 +350,7 @@ form .half-form {
   grid-gap: 30px;
 }
 
-form input[type=submit] {
+form button[type=submit] {
   border-style: none;
   cursor: pointer;
   font-size: 18px;
@@ -456,6 +461,23 @@ header .top-nav ul a {
 
 header .top-nav ul a:hover {
   color: #d0d0d0;
+}
+
+header .top-nav ul .cart-count {
+  display: inline-block;
+  background: #FFD94D;
+  color: #212121;
+  line-height: 0;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+header .top-nav ul .cart-count span {
+  display: inline-block;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 footer {
@@ -627,6 +649,51 @@ footer {
   color: #919191;
 }
 
+.cart-section .cart-table-row .cart-options {
+  color: #212121;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0;
+}
+
+.cart-section .cart-table-row .cart-options:hover {
+  color: #6e6e6e;
+}
+
+.cart-section .have-code {
+  display: block;
+  margin: 14px 0;
+}
+
+.cart-section .have-code-container {
+  border: 1px solid #919191;
+  padding: 16px;
+  width: 50%;
+}
+
+.cart-section .have-code-container form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-section .have-code-container input[type=text] {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.cart-section .have-code-container input[type=submit] {
+  background: white;
+  border: 1px solid #919191;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.cart-section .have-code-container input[type=submit]:hover {
+  background: #212121;
+}
+
 .cart-section .cart-totals {
   margin: 30px 0;
   padding: 20px;
@@ -734,39 +801,6 @@ h1.checkout-heading {
   font-weight: bold;
   font-size: 22px;
   line-height: 2.2;
-}
-
-.checkout-section .have-code {
-  display: block;
-  margin: 14px 0;
-  text-align: right;
-}
-
-.checkout-section .have-code-container {
-  border: 1px solid #919191;
-  padding: 16px;
-}
-
-.checkout-section .have-code-container form {
-  display: flex;
-  justify-content: space-between;
-}
-
-.checkout-section .have-code-container input[type=text] {
-  width: 70%;
-  padding: 10px;
-  font-size: 16px;
-}
-
-.checkout-section .have-code-container input[type=submit] {
-  background: white;
-  border: 1px solid #919191;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.checkout-section .have-code-container input[type=submit]:hover {
-  background: #212121;
 }
 
 .thank-you-section {

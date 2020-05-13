@@ -113,6 +113,10 @@
     display: none;
   }
 
+  .cart-section .have-code-container {
+    width: 100%;
+  }
+
   .cart-section .cart-totals {
     flex-direction: column;
   }
