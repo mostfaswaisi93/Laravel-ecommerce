@@ -1,5 +1,5 @@
-h1.checkout {
-    margin-top: 30px;
+h1.checkout-heading {
+    margin-top: 40px;
 }
 
 .checkout-section {
@@ -63,20 +63,30 @@ h1.checkout {
         }
     }
     .have-code {
+        display: block;
         margin: 14px 0;
         text-align: right;
     }
     .have-code-container {
         border: 1px solid $text-color-light;
         padding: 16px;
+        form {
+            display: flex;
+            justify-content: space-between;
+        }
         input[type="text"] {
             width: 70%;
             padding: 10px;
             font-size: 16px;
         }
         input[type="submit"] {
-            // background: white;
+            background: white;
             border: 1px solid $text-color-light;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            &:hover {
+                background: $text-color;
+            }
         }
     }
 }
