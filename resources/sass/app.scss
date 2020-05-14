@@ -2,9 +2,9 @@
 // Abstracts
 @import 'abstracts/variables';
 // Base
+@import 'base/reset';
 @import 'base/base';
 @import 'base/helpers';
-@import 'base/reset';
 @import 'base/typography';
 @import 'base/utility';
 // Components
@@ -18,8 +18,8 @@
 @import 'layout/header';
 @import 'layout/footer';
 // Pages
-@import 'pages/main-page';
-@import 'pages/products';
+@import 'pages/landing-page';
+@import 'pages/shop';
 @import 'pages/product';
 @import 'pages/cart';
 @import 'pages/checkout';
