@@ -19,8 +19,11 @@
             }
             ul {
                 margin: 20px auto 0;
-                width: 80%;
+                // width: 80%;
             }
+        }
+        .top-nav-left {
+            flex-direction: column;
         }
         .hero {
             grid-template-columns: 1fr;
@@ -36,6 +39,10 @@
         .products {
             grid-template-columns: 1fr;
         }
+    }
+    .products-header {
+        flex-direction: column;
+        margin-bottom: 48px;
     }
     .blog-section {
         .blog-posts {
