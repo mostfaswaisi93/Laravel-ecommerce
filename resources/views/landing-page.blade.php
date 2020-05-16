@@ -22,18 +22,7 @@
     <header class="with-background">
         <div class="top-nav container">
             <div class="logo">Laravel Ecommerce</div>
-            <ul>
-                <li><a href="{{ route('shop.index') }}">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li>
-                    <a href="{{ route('cart.index') }}">Cart <span class="cart-count">
-                            @if (Cart::instance('default')->count() > 0)
-                            <span>{{ Cart::instance('default')->count() }}</span></span>
-                        @endif
-                    </a>
-                </li>
-            </ul>
+            {{ menu('main', 'partials.menus.main') }}
         </div> <!-- end top-nav -->
         <div class="hero container">
             <div class="hero-copy">
@@ -41,8 +30,10 @@
                 <p>Includes multiple products, categories, a shopping cart and a checkout system with Stripe
                     integration.</p>
                 <div class="hero-buttons">
-                    <a href="#" class="button button-white">Blog Post</a>
-                    <a href="#" class="button button-white">GitHub</a>
+                    <a href="https://www.youtube.com/playlist?list=PLEhEHUEU3x5oPTli631ZX9cxl6cU_sDaR"
+                        class="button button-white">Screencasts</a>
+                    <a href="https://github.com/drehimself/laravel-ecommerce-example"
+                        class="button button-white">GitHub</a>
                 </div>
             </div> <!-- end hero-copy -->
 
@@ -59,7 +50,7 @@
 
             <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore vitae nisi,
                 consequuntur illum dolores cumque pariatur quis provident deleniti nesciunt officia est reprehenderit
-                sunt aliquid possimus temporibus enim eum hic.</p>
+                sunt aliquid possimus temporibus enim eum hic lorem.</p>
 
             <div class="text-center button-container">
                 <a href="#" class="button">Featured</a>
@@ -135,6 +126,7 @@
     </div> <!-- end blog-section -->
 
     @include('partials.footer')
+
 
 </body>
 
